@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+:root{
+    --verde: #56BC8C;
+    --white: #FFFFFF;
+    --azul: #354760;
+    --naranja: #FF8E51;
+    --black: #000000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--verde);
+}
+
+.form-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 20%;
+    align-self: flex-end;
+    padding-right: 60px;
+}
+
+.form{
+   padding-left: 100px;
+}
+
+.titulo{
+    color: var(--white);
+}
+
+.input-email{
+    height: 35px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: var(--md);
+    padding-left: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+label, input[type="radio"] {
+    margin-bottom: 20px;
+}
+  
+.subtitulo-1{
+    font-size: var(--lg);
+    font-weight: 300;
+    margin-right: 21px;
+}
+
+.subtitulo-2{
+    font-size: var(--lg);
+    font-weight: 300;
+    margin-right: 4px;
+}
+
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.ingreso-button{
+    font-size: var(--md);
+    color: var(--white);
+    width: 150px;
+    height: 50px;
+    background-color: var(--naranja);
+    border: 3px solid var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.fondo{
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 200px;
+    z-index: -4;
+}
+
+@media (max-width: 640px) {
+    .logo{
+        width: 40%;
+        align-self: center;
+        margin-left: 30px;
+    }
+
+    .input-email{
+        width: 80%;
+    }
+
+    .ingreso-button{
+        width: 30%;
+        align-self: center;
+        margin-left: 100px;
+        font-size: var(--sm);
+    }
+
+    .fondo{
+        display: none;
+    }
+
+    .form{
+        padding-left: 50px;
+
+    }
+
+    .form-container{
+        margin-top: 100px;
+    }
+}
