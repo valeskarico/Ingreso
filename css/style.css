@@ -52,13 +52,13 @@ body{
 }
 
 label, input[type="radio"] {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
   
 .subtitulo-1{
     font-size: var(--lg);
     font-weight: 300;
-    margin-right: 21px;
+    margin-right: 22px;
 }
 
 .subtitulo-2{
@@ -109,6 +109,7 @@ input[type="radio"]{
         align-self: center;
         margin-left: 100px;
         font-size: var(--sm);
+        margin-top: 20px;
     }
 
     .fondo{
