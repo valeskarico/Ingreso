@@ -48,30 +48,79 @@ body{
     font-size: var(--md);
     padding-left: 15px;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
-label, input[type="radio"] {
-    margin-bottom: 30px;
+label{
+    margin-bottom: 25px;
 }
   
 .profesor{
     font-size: var(--lg);
     font-weight: 300;
-    margin-right: 22px;
 }
 
 .estudiante{
     font-size: var(--lg);
     font-weight: 300;
-    margin-right: 4px;
 }
 
-input[type="radio"]{
-    width: 15px;
-    height: 15px;
+.profesor, .estudiante {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
     cursor: pointer;
-}
+  }
+  
+
+  .profesor input[type="radio"], .estudiante input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-top: 3px;
+  }
+
+  .checkmark.one{
+    margin-right: -18px;
+  }
+  
+  .profesor input[type="radio"]:checked ~ 
+  .checkmark:after, 
+  .estudiante input[type="radio"]:checked ~ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--azul);
+  }
+
+  .profesor, .estudiante {
+    position: relative;
+    padding-right: 32px;
+  }
+  
+
+  .profesor input[type="radio"]:checked ~ .checkmark, .estudiante input[type="radio"]:checked ~ .checkmark {
+    border-color: var(--azul);
+  }
+  
 
 .ingreso-button{
     font-size: var(--md);
@@ -84,6 +133,7 @@ input[type="radio"]{
     border-radius: 20px;
     cursor: pointer;
     margin-left: 200px;
+    margin-top: 20px;
 }
 
 .fondo{
@@ -109,7 +159,6 @@ input[type="radio"]{
         align-self: center;
         margin-left: 100px;
         font-size: var(--sm);
-        margin-top: 20px;
     }
 
     .fondo{
