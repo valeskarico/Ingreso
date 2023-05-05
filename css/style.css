@@ -15,7 +15,7 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background-color: var(--verde);
-    background-image: url(/img/Customer-support-feedback.svg);
+    background-image: url(/img/Customer-support-feedback.png);
     background-position-y: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -156,10 +156,6 @@ label{
         align-self: center;
         margin-left: 100px;
         font-size: var(--sm);
-    }
-
-    .fondo{
-        display: none;
     }
 
     .form{
