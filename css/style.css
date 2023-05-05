@@ -15,7 +15,7 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background-color: var(--verde);
-    background-image: url(/img/Customer-support-feedback.png);
+    background-image: url(../img/Customer-support.png);
     background-position-y: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
